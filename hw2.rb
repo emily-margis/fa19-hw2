@@ -58,6 +58,6 @@ def scrabble(word)
   # Q5 CODE HERE
   chars = word.split('')
   sum = 0
-  chars.each { |c| sum += values[:c]}
+  chars.each { |c| sum += values[c.to_sym]}
   sum
 end
